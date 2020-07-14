@@ -8,4 +8,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+  .header
+    .header__title
+      = link_to "NAVI and GUIDE", '#', class: "header__title--text"
+    .header__right
+      = link_to "新規投稿", '#', class: "header__right--btn"
+  .contents
     = yield
