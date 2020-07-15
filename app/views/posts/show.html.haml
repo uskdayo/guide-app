@@ -11,4 +11,23 @@
         = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
     .postText
       = simple_format @post.content
+  .postcomment
+    - if current_user
+      = form_with(model: [@post, @comment], local: true) do |form|
+        = form.text_area :text, placeholder: "コメントする", rows: "2", class: "textarea"
+        = form.submit "SEND"
+    - else
+      %strong
+        %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
+
+  .comments
+  %h4 ＜コメント一覧＞
+  - if @comments
+    - @comments.each do |comment|
+      %p
+        %strong
+          =comment.user.nickname
+          ：
+        = comment.text
+
 .contents__right    

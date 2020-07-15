@@ -1,0 +1,14 @@
+.postcomment textarea {
+  height: 100px;
+  width: 100%;
+  resize: none;
+}
+
+.commentbox{
+  width: 100%;
+  display: flex;
+}
+
+.commentbox p{
+  margin-right: 15px;
+}
