@@ -1,0 +1,21 @@
+.content__title{
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  .form{
+    height: 500px;
+    &__title{
+      height: 50px;
+      width: 100%;
+      margin: 20px 0 20px;
+    }
+    &__text{
+      height: 300px;
+      width: 100%;
+      resize: none;
+    }
+    &__btn{
+
+    }
+  }
+}

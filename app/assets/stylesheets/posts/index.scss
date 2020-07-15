@@ -1,35 +1,10 @@
 .contents{
   display: flex;
-  justify-content: space-between;
   &__left{
-    width: 300px;
+    width: 200px;
   }
   &__center{
-    background-color: blue;
-    width: calc(100% - 600px);
-    .content{
-      display: flex;
-      padding: 20px;
-      &__left{
-        &--image{
-          height: 225px;
-          width: 150px;
-          border: solid 1px black;
-          margin-right: 10px;
-        }
-      }
-      &__right{
-        &__top{
-          font-size: 50px;
-          font-weight: bold;
-        }
-        &__bottom{
-          &--date{
-
-          }
-        }
-      }
-    }
+    width: calc(100% - 500px);
   }
   &__right{
     width: 300px;

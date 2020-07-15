@@ -3,12 +3,11 @@
 }
 
 .header{
-  background-color: red;
   height: 150px;
   width: 100%;
   display: flex;
   padding: 30px;
-  justify-content: space-between;
+  justify-content: space-around;
   line-height: 90px;
   &__title{
     font-size: 30px;
@@ -18,8 +17,18 @@
       font-weight: bold;
     }
   }
+  &__right a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  &__right{
+    &--btn{
+      margin-left: 30px;
+    }
+  }
 }
 
 .contents{
-  background-color: gray;
+  
 }
