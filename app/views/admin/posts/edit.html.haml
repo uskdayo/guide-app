@@ -1,10 +1,10 @@
 .contents__left
 .contents__center
   .content__title
-    新規記事の作成
-    = form_with model: [:admin, @post], class: :form, local: true do |form|
+    投稿の編集
+    = form_with model: @post, class: :form, local: true do |form|
       = form.text_field :title, placeholder: :タイトル, class: :form__title
       = form.text_field :image, placeholder: "Image Url", class: :form__img
-      = form.text_area :content, placeholder: :本文, class: :form__text
+      = form.text_area :content, placeholder: :記事本文, class: :form__text
       = form.submit '投稿する', class: :form__btn
-.contents__right      
+.contents__right
